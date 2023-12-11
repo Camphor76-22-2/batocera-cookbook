@@ -20,7 +20,8 @@ ls -al /media
 ```
 
 output:
-```drwxr-xr-x 1 root 197609 0 Dec 11 12:53 DRIVE_NAME
+```
+drwxr-xr-x 1 root 197609 0 Dec 11 12:53 DRIVE_NAME
 ```
 
 Run script:
