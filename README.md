@@ -20,7 +20,7 @@ Adjust the "-fs 10" portion of the terminal.sh file to change the font size, or 
 Again move into /userdata/roms/ports to use
 
 # settings.ini
-Move this file to /userdata/system/.config/gtk-2.0/settings.ini to boost font size in the file browser, this can help if the default batocera solution in batocera.conf (changu dpi number) is not working. This does nothing to the actual dpi scaling, so some words may be cut off. Adjust the number in the file if you prefer larger or smaller text.
+Move this file to /userdata/system/.config/gtk-2.0/settings.ini to boost font size in the file browser, this can help if the default batocera solution of changing the dpi in batocera.conf is not working. This does nothing to the actual dpi scaling, so some words may be cut off. Adjust the number in the file if you prefer larger or smaller text.
 
 # update_rom_folders.sh
 Takes one argument: the path of a non boot disk you want to put roms on
