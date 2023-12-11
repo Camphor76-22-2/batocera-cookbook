@@ -49,6 +49,6 @@ Run script:
 ./update_rom_folders.sh /media/DRIVE_NAME
 ```
 
-No output expected, but folder/s called portal/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the portal/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded from the associated drive
+No output expected, but folder/s called portal/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the /userdata/roms/CONSOLE_NAME/portal/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded from the associated drive
 
 If this script is run for multiple drives additional folders will be created for each that match the DRIVE_NAME
