@@ -42,7 +42,7 @@ output:
 ```
 drwxr-xr-x 1 root 197609 0 Dec 11 12:53 DRIVE_NAME
 ```
-If you don't see any drives listed here you may need to format the drive, or reboot batocera. For non usb media the drive name might be something obtuse, such as NO_LABEL, SAB004, or the name of a controller if you are using an external ssd adapter. This is fine and will not cause any problems for batocera.
+If you don't see any drives listed here you may need to format the drive, or reboot batocera. For non usb media the drive name might be something obtuse, such as NO_LABEL, SAB004, or the name of a controller if you are using an external ssd adapter. This is fine and will not cause any problems for batocera as long as you don't have multiple drives that show up under the same name. If you do have multiple drives that show up under the same name \(multiple flash drives of the same type is a good example\) you may want to recreate the partition/filesystem on the drive with a different name. Alternatively just make sure to run the script again every time you switch drives.
 
 Run script:
 ```
