@@ -2,5 +2,6 @@ romfolders=$(ls -al /userdata/roms | grep -v "\." | grep -v "total" | awk '{prin
 for f in $romfolders; do
  echo $f
  mkdir -p $1/$f
- ln -s $1/$f /userdata/roms/$f/portal
+ medianame=$(echo "$1" | sed 's/.*\///')
+ ln -s $1/$f /userdata/roms/$f/portal/$medianame
 done
