@@ -4,7 +4,7 @@ Some simple tooling for batocera to make multi disk/high dpi setups easier
 Tested on batocera 38
 
 # flatpack ports
-These .sh files can be used to run some flatpak apps \(must already be installed via flatpak in F1 > applications > flatpak.....\) from the emulation station menu when they normally wouldn't work (i.e. electron apps)
+These .sh files can be used to run some flatpak apps \(must already be installed via flatpak in F1 > applications > flatpak.....\) from the emulation station menu when they normally wouldn't work \(i.e. electron apps\)
 
 To use move these into /userdata/roms/ports
 
@@ -13,7 +13,7 @@ Chrome and freetube are included, but any other electron flatpak app could in th
 This is usually not a super safe thing to do, so use at own risk etc. and for the love of all that is holy do not do this with discord or other apps which you would want to log into.
 
 # ports
-Other files to add emulation station launch options, currently just the terminal (launching via this script can help with terminal readability on 4k screens due to using different font scaling, this will not affect the terminal launched via the file browser)
+Other files to add emulation station launch options, currently just the terminal \(launching via this script can help with terminal readability on 4k screens due to using different font scaling, this will not affect the terminal launched via the file browser\)
 
 Adjust the "-fs 10" portion of the terminal.sh file to change the font size, or any other xterm option
 
@@ -31,7 +31,7 @@ Any rom placed on the extra drive \(i.e. in the new folders created by this scri
 
 Typical use:
 
-Open terminal \F1 then go to applications on the left sidebar and then open "xterm"\)
+Open terminal \(F1 then go to applications on the left sidebar and then open "xterm"\)
 
 get drive name:
 ```
