@@ -15,9 +15,12 @@ This is usually not a super safe thing to do, so use at own risk etc. and for th
 # ports
 Other files to add emulation station launch options, currently just the terminal (launching via this script can help with terminal readability on 4k screens due to using different font scaling, this will not affect the terminal launched via the file browser)
 
+Adjust the "-fs 10" portion of the terminal.sh file to change the font size, or any other xterm option
+
 Again move into /userdata/roms/ports to use
 
-#
+# settings.ini
+Move this file to /userdata/system/.config/gtk-2.0/settings.ini to boost font size in the file browser, this can help if the default batocera solution in batocera.conf (changu dpi number) is not working. This does nothing to the actual dpi scaling, so some words may be cut off. Adjust the number in the file if you prefer larger or smaller text.
 
 # update_rom_folders.sh
 Takes one argument: the path of a non boot disk you want to put roms on
