@@ -4,7 +4,7 @@ Some simple tooling for batocera to make multi disk/high dpi setups easier
 Tested on batocera 38
 
 # flatpack ports
-These .sh files can be used to run some flatpak apps from the emulation station menu when they normally wouldn't work (i.e. electron apps)
+These .sh files can be used to run some flatpak apps (must already be installed via flatpak in F1 > applications > flatpak.....) from the emulation station menu when they normally wouldn't work (i.e. electron apps)
 
 To use move these into /userdata/roms/ports
 
