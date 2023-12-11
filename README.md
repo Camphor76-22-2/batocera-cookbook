@@ -4,7 +4,7 @@ Some simple tooling for batocera to make multi disk/high dpi setups easier
 Tested on batocera 38
 
 # flatpack ports
-These .sh files can be used to run some flatpak apps (must already be installed via flatpak in F1 > applications > flatpak.....) from the emulation station menu when they normally wouldn't work (i.e. electron apps)
+These .sh files can be used to run some flatpak apps \(must already be installed via flatpak in F1 > applications > flatpak.....\) from the emulation station menu when they normally wouldn't work (i.e. electron apps)
 
 To use move these into /userdata/roms/ports
 
@@ -27,11 +27,11 @@ Takes one argument: the path of a non boot disk you want to put roms on
 
 Result: creates folders for each emulator type in the locaton you specify, and symlinks them from their associated roms folder so that batocera can see them. 
 
-Any rom placed on the extra drive (i.e. in the new folders created by this script under /userdata/roms/CONSOLE_NAME/portal/) will show up in emulationstation as normal, but be loaded from your second drive
+Any rom placed on the extra drive \(i.e. in the new folders created by this script under /userdata/roms/CONSOLE_NAME/portal/\) will show up in emulationstation as normal, but be loaded from your second drive
 
 Typical use:
 
-Open terminal (F1 then go to applications on the left sidebar and then open "xterm")
+Open terminal \F1 then go to applications on the left sidebar and then open "xterm"\)
 
 get drive name:
 ```
