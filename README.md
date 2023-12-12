@@ -8,11 +8,11 @@ Takes one argument: the path of a non boot disk you want to put roms on
 
 Result: creates folders for each emulator type in the locaton you specify, and symlinks them from their associated roms folder \(/batocera-roms/\<romfolders\>\)at the root of the non-boot disk so that batocera can see them. 
 
-Any rom placed on the extra drive \(i.e. in the new folders created by this script under /userdata/roms/CONSOLE_NAME/portal/DRIVE_NAME\) will show up in emulationstation as normal, but be loaded from your second/third/etc. drive
+Any rom placed on the extra drive \(i.e. in the new folders created by this script under /userdata/roms/CONSOLE_NAME/drives/DRIVE_NAME\) will show up in emulationstation as normal, but be loaded from your second/third/etc. drive
 
-Typical use:
+Typical use after physically connecting a formatted drive to the system:
 
-Open terminal \(F1 then go to applications on the left sidebar and then open "xterm"\)
+Open terminal on the batocera pc\(F1 then go to applications on the left sidebar and then open "xterm"\)
 
 get drive name:
 ```
@@ -33,18 +33,18 @@ Run script:
 ./update_rom_folders.sh /media/DRIVE_NAME
 ```
 
-No output expected, but folder/s called portal/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the /userdata/roms/CONSOLE_NAME/portal/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded and stored on the associated drive
+No output expected, but folder/s called drives/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the /userdata/roms/CONSOLE_NAME/drives/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded and stored on the associated drive
 
 The folder /media/DRIVE_NAME/batocera-roms will be created and have subfolders for every subfolder in the existing /userdata/roms folder
 
 If this script is run for multiple drives additional folders will be created for each that match the DRIVE_NAME e.g 
 ```
 ...
-/userdata/roms/snes/portal/sbrntUSB
+/userdata/roms/snes/drives/sbrntUSB
                           /HardDrive01
                           /NVMEDISK
                           /NO_LABEL
-/userdata/roms/gamecube/portal/sbrntUSB
+/userdata/roms/gamecube/drives/sbrntUSB
                               /HardDrive01
                               /NVMEDISK
                               /NO_LABEL
