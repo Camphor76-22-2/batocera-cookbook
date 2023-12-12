@@ -15,7 +15,7 @@ This is usually not a super safe thing to do, so use at own risk etc. and for th
 # ports
 Other files to add emulation station launch options, currently just the terminal \(launching via this script can help with terminal readability on 4k screens due to using different font scaling, this will not affect the terminal launched via the file browser\)
 
-Adjust the "-fs 10" portion of the terminal.sh file to change the font size, or any other xterm option
+Adjust the "-fs 10" portion of the terminal.sh file to change the font size
 
 Again move into /userdata/roms/ports to use
 
@@ -42,13 +42,15 @@ output:
 ```
 drwxr-xr-x 1 root 197609 0 Dec 11 12:53 DRIVE_NAME
 ```
-If you don't see any drives listed here you may need to format the drive, or reboot batocera. For non usb media the drive name might be something obtuse, such as NO_LABEL, SAB004, or the name of a controller if you are using an external ssd adapter. This is fine and will not cause any problems for batocera.
+If you don't see any drives listed here you may need to format the drive, or reboot batocera. For non usb media the drive name might be something obtuse, such as NO_LABEL, SAB004, or the name of a controller if you are using an external ssd adapter. This is fine and will not cause any problems for batocera as long as you don't have multiple drives that show up under the same name. 
+
+If you do have multiple drives that show up under the same name \(multiple flash drives of the same type is a good example\) you may want to recreate the partition/filesystem on the drive with a different name. Alternatively just make sure to run the script again every time you switch drives \(i.e. ensure that there is are folders on the drives for each roms subfolder so that the symlinks resolve\).
 
 Run script:
 ```
 ./update_rom_folders.sh /media/DRIVE_NAME
 ```
 
-No output expected, but folder/s called portal/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the portal/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded from the associated drive
+No output expected, but folder/s called portal/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the /userdata/roms/CONSOLE_NAME/portal/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded from the associated drive
 
 If this script is run for multiple drives additional folders will be created for each that match the DRIVE_NAME
