@@ -15,7 +15,7 @@ This is usually not a super safe thing to do, so use at own risk etc. and for th
 # ports
 Other files to add emulation station launch options, currently just the terminal \(launching via this script can help with terminal readability on 4k screens due to using different font scaling, this will not affect the terminal launched via the file browser\)
 
-Adjust the "-fs 10" portion of the terminal.sh file to change the font size, or any other xterm option
+Adjust the "-fs 10" portion of the terminal.sh file to change the font size
 
 Again move into /userdata/roms/ports to use
 
