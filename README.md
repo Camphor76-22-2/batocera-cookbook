@@ -3,25 +3,6 @@ Some simple tooling for batocera to make multi disk/high dpi setups easier
 
 Tested on batocera 38
 
-# flatpack ports
-These .sh files can be used to run some flatpak apps \(must already be installed via flatpak in F1 > applications > flatpak.....\) from the emulation station menu when they normally wouldn't work \(i.e. electron apps\)
-
-To use move these into /userdata/roms/ports
-
-Chrome and freetube are included, but any other electron flatpak app could in theory be run using an almost identical file.
-
-This is usually not a super safe thing to do, so use at own risk etc. and for the love of all that is holy do not do this with discord or other apps which you would want to log into.
-
-# ports
-Other files to add emulation station launch options, currently just the terminal \(launching via this script can help with terminal readability on 4k screens due to using different font scaling, this will not affect the terminal launched via the file browser\)
-
-Adjust the "-fs 10" portion of the terminal.sh file to change the font size
-
-Again move into /userdata/roms/ports to use
-
-# settings.ini
-Move this file to /userdata/system/.config/gtk-2.0/settings.ini to boost font size in the file browser, this can help if the default batocera solution of changing the dpi in batocera.conf is not working. This does nothing to the actual dpi scaling, so some words may be cut off. Adjust the number in the file if you prefer larger or smaller text.
-
 # update_rom_folders.sh
 Takes one argument: the path of a non boot disk you want to put roms on
 
@@ -54,3 +35,32 @@ Run script:
 No output expected, but folder/s called portal/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the /userdata/roms/CONSOLE_NAME/portal/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded from the associated drive
 
 If this script is run for multiple drives additional folders will be created for each that match the DRIVE_NAME
+
+# flatpack ports
+These .sh files can be used to run some flatpak apps \(must already be installed via flatpak in F1 > applications > flatpak.....\) from the emulation station menu when they normally wouldn't work \(i.e. electron apps\)
+
+To use move these into /userdata/roms/ports
+
+Chrome and freetube are included, but any other electron flatpak app could in theory be run using an almost identical file.
+
+This is usually not a super safe thing to do, so use at own risk etc. and for the love of all that is holy do not do this with discord or other apps which you would want to log into.
+
+# ports
+Other files to add emulation station launch options, currently just the terminal \(launching via this script can help with terminal readability on 4k screens due to using different font scaling, this will not affect the terminal launched via the file browser\)
+
+Adjust the "-fs 10" portion of the terminal.sh file to change the font size
+
+Again move into /userdata/roms/ports to use
+
+# es_systems_romhacks.cfg
+
+This file adds an emulation station menu item for snes romhacks, mostly as an example for how to do this since the batocera wiki is outdated at time of writing.
+
+Place this file in /userdata/system/config/emulationstation/ to install. (You may also need to create the folder /userdata/roms/supermarioworld)
+
+
+
+# settings.ini
+Move this file to /userdata/system/.config/gtk-2.0/settings.ini to boost font size in the file browser, this can help if the default batocera solution of changing the dpi in batocera.conf is not working. This does nothing to the actual dpi scaling, so some words may be cut off. Adjust the number in the file if you prefer larger or smaller text.
+
+
