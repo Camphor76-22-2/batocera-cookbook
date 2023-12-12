@@ -4,7 +4,7 @@ for f in $romfolders; do
  echo $f
  mkdir -p $1/batocera_roms/$f
  medianame=$(echo "$1" | sed 's/.*\///')
- mkdir -p /userdata/roms/$f/portal/
- echo "Linking /userdata/roms/$f/portal/$medianame to $1/batocera_roms/$f"
- ln -s $1/batocera_roms/$f /userdata/roms/$f/portal/$medianame
+ mkdir -p /userdata/roms/$f/drives/
+ echo "Linking /userdata/roms/$f/drives/$medianame to $1/batocera_roms/$f"
+ ln -s $1/batocera_roms/$f /userdata/roms/$f/drives/$medianame
 done
