@@ -29,12 +29,13 @@ If you do have multiple drives that show up under the same name \(multiple flash
 
 Run script:
 ```
+#Make sure to replace drive name here with your actual drivename from the above command
 ./update_rom_folders.sh /media/DRIVE_NAME
 ```
 
 No output expected, but folder/s called portal/DRIVE_NAME will be created for each folder in /userdata/roms. Putting roms in the /userdata/roms/CONSOLE_NAME/portal/DRIVE_NAME folder/s will make them show up as normal in emulationStation, but be loaded and stored on the associated drive
 
-The folder /media/DRIVENAME/batocera-roms will be created and have subfolders for every subfolder in the existing /userdata/roms folder
+The folder /media/DRIVE_NAME/batocera-roms will be created and have subfolders for every subfolder in the existing /userdata/roms folder
 
 If this script is run for multiple drives additional folders will be created for each that match the DRIVE_NAME e.g 
 ```
@@ -42,9 +43,11 @@ If this script is run for multiple drives additional folders will be created for
 /userdata/roms/snes/portal/sbrntUSB
                           /HardDrive01
                           /NVMEDISK
+                          /NO_LABEL
 /userdata/roms/gamecube/portal/sbrntUSB
                               /HardDrive01
                               /NVMEDISK
+                              /NO_LABEL
 ...
 ```
 
