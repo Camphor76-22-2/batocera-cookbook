@@ -1,5 +1,5 @@
 # batocera-cookbook
-Some simple tooling for batocera to make multi disk/high dpi setups easier forpeople who dont want to spend extra time digging
+Some simple tooling for batocera to make multi disk/high dpi setups easier for people who dont want to spend extra time digging
 
 Tested on batocera 38
 
