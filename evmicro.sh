@@ -1,0 +1,30 @@
+#!/bin/bash
+evsieve --input /dev/input/by-id/usb-VKB-Sim_©_Alex_Oz_2021_VKBsim_Gladiator_EVO_R-event-joystick grab \
+--map btn:trigger:0 abs:rz:0 \
+--map btn:trigger:1 abs:rz:1023 \
+--map btn:trigger_happy5 btn:tr \
+--map btn:trigger_happy1 btn:start \
+--map btn:trigger_happy3 btn:select \
+--map abs:x abs:rx \
+--map abs:y abs:ry \
+--map btn:thumb2 btn:south \
+--map btn:top2 btn:east \
+--map abs:hat0y:0 btn:thumbr:0 \
+--map abs:hat0y:-1 btn:thumbr:1 \
+--input /dev/input/by-id/usb-VKB-Sim_©_Alex_Oz_2021_VKBsim_Gladiator_EVO_L-event-joystick grab \
+--map btn:trigger:0 abs:z:0 \
+--map btn:trigger:1 abs:z:1023 \
+--map btn:trigger_happy5 btn:tl \
+--map abs:hat0y:0 btn:thumbl:0 \
+--map abs:hat0y:-1 btn:thumbl:1 \
+--map btn:pinkie:0 abs:hat0y:0 \
+--map btn:pinkie:1 abs:hat0y:-1 \
+--map btn:base2:0 abs:hat0y:0 \
+--map btn:base2:1 abs:hat0y:1 \
+--map btn:base:0 abs:hat0x:0 \
+--map btn:base:1 abs:hat0x:1 \
+--map btn:base3:0 abs:hat0x:0 \
+--map btn:base3:1 abs:hat0x:-1 \
+--map btn:thumb2 btn:north \
+--map btn:top2 btn:west \
+--output name=test123 create-link=/dev/input/by-id/test123
