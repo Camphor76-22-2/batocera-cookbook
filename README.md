@@ -60,8 +60,11 @@ Optional:
 ```
 
 # evmicro.sh
-This file is my controller config for playing with dual flight sticks, it merges two VKB EVO \(L and R\)sticks into one "xinput compatible" evdev controller, I use this when playing armored core 6
-Possible changes to this file for other games: add a namespace directive to the input lines, and block hats that are not used. This will cause them to reset to 0 more correctly if the game you are playing doesn't handle that well or you get ghost inputs. This should be applicable to any dinput flightstick/throttle, just change the names of the input devices \(ls /dev/input/by-id/ for your device names\) and swap the first item in the map directives for whatever it is on your stick. You can check what buttons are registering by swapping the output statement with a --print and pressing controller buttons
+This file is my controller config for playing with dual flight sticks, it merges two VKB EVO \(L and R\)sticks into one "xinput compatible" evdev controller, I use this when playing armored core 6.
+
+Possible changes to this file for other games: add a namespace directive to the input lines, and block hats that are not used. This will cause them to reset to 0 more correctly if the game you are playing doesn't handle that well or you get ghost inputs. 
+
+This should be applicable to any dinput flightstick/throttle, just change the names of the input devices \(ls /dev/input/by-id/ for your device names\) and swap the first item in the map directives for whatever it is on your stick. You can check what buttons are registering by swapping the output statement with a --print and pressing controller buttons
 
 
 # flatpack ports
